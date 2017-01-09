@@ -1,0 +1,14 @@
+<apex:page docType="html-5.0" title="Business Card">
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="User" fields="Id, Email, FirstName, LastName, Phone, Title"/>
+    </apex:remoteObjects>
+    <div class="mypage">
+        <ul>
+            <li>First Name : {!$User.FirstName}</li>
+            <li>Last Name: {!$User.LastName}</li>
+            <li>Title: {!$User.Title}</li>
+            <li>Email: {!$User.Email}</li>
+            <li>Phone: {!$User.Phone}</li>
+        </ul>
+    </div>
+</apex:page>
